@@ -1,14 +1,12 @@
 import { Metadata } from 'next';
+import { Poppins } from 'next/font/google';
 import * as React from 'react';
 
-import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
+import '@/styles/globals.css';
 
 import { siteConfig } from '@/constant/config';
 
-// !STARTERCONF Change these default meta
-// !STARTERCONF Look at @/constant/config to change them
 export const metadata: Metadata = {
   title: {
     default: siteConfig.title,
@@ -16,8 +14,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   robots: { index: true, follow: true },
-  // !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-  // ! copy to /favicon folder
+
   icons: {
     icon: '/favicon/favicon.ico',
     shortcut: '/favicon/favicon-16x16.png',
@@ -38,15 +35,13 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     images: [`${siteConfig.url}/images/og.jpg`],
-    // creator: '@th_clarence',
   },
-  // authors: [
-  //   {
-  //     name: 'Theodorus Clarence',
-  //     url: 'https://theodorusclarence.com',
-  //   },
-  // ],
 };
+
+const poppins = Poppins({
+  weight: ['400', '500', '700', '900'],
+  subsets: ['latin'],
+});
 
 export default function RootLayout({
   children,
@@ -55,7 +50,11 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <section className={`${poppins.className} bg-white text-zinc-700`}>
+          <div className='layout'>{children}</div>
+        </section>
+      </body>
     </html>
   );
 }
