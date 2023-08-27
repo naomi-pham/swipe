@@ -41,7 +41,7 @@ const PomodoroTimer = () => {
     setMode(timers.work);
   };
 
-  const handleSetBreak = () => {
+  const handleMode = () => {
     setStartTimer(false);
     setTimer(mode === timers.work ? timers.break.value : timers.work.value);
     setMode(mode === timers.work ? timers.break : timers.work);
@@ -53,6 +53,7 @@ const PomodoroTimer = () => {
         if (timer > 0) {
           setTimer(timer - 1);
         } else if (timer === 0) {
+          // Add toaster
           // console.log("Time's up");
         }
 
@@ -104,7 +105,7 @@ const PomodoroTimer = () => {
           </button>
           <button
             className='rounded-lg bg-zinc-200 px-3 py-2 text-sm uppercase tracking-wider'
-            onClick={handleSetBreak}
+            onClick={handleMode}
           >
             {mode === timers.work ? 'Break' : 'Work'}
           </button>

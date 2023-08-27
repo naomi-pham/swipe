@@ -11,15 +11,36 @@ export default function HomePage() {
       </Head>
       <section className='mx-auto max-w-7xl bg-white'>
         <div className='layout relative flex min-h-screen flex-col py-12'>
-          <ul>
-            <li>
-              <Link href='/pomodoro-timer' className='text-blue-600 underline'>
-                Pomodoro timer
-              </Link>
-            </li>
+          <ul className='space-y-2'>
+            {list.map((item) => (
+              <li key={item.id}>
+                <Link href={item.link} className='text-blue-600 underline'>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </section>
     </main>
   );
 }
+
+export const list = [
+  {
+    id: 0,
+    link: '/pomodoro-timer',
+    label: 'Pomodoro Timer',
+  },
+
+  {
+    id: 1,
+    link: '/redux-shopping-cart',
+    label: 'Redux Shopping Cart',
+  },
+  {
+    id: 2,
+    link: '/carousel',
+    label: 'Carousel',
+  },
+];
