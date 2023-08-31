@@ -43,4 +43,9 @@ export const list = [
     link: '/carousel',
     label: 'Carousel',
   },
+  {
+    id: 3,
+    link: '/nike',
+    label: 'Nike landing page',
+  },
 ];
