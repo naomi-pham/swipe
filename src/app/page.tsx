@@ -48,4 +48,9 @@ export const list = [
     link: '/nike',
     label: 'Nike landing page',
   },
+  {
+    id: 4,
+    link: '/viet-travels',
+    label: 'Viet Travels',
+  },
 ];

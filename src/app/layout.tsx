@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <section className={`${poppins.className} bg-white text-zinc-700`}>
+        <section className={`${poppins.className}`}>
           <div className='layout'>{children}</div>
         </section>
       </body>

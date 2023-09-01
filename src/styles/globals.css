@@ -45,3 +45,32 @@ body {
 .content-container {
   @apply mx-auto w-full max-w-[1440px] px-6;
 }
+
+.card-linear {
+  border-radius: 16px;
+  border: 2px solid rgba(168, 158, 130, 0.5);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.06) 99.15%
+  );
+  backdrop-filter: blur(15px);
+}
+
+.button-linear {
+  border-radius: 50px;
+  border: 2px solid rgba(168, 158, 130, 0.5);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.04) 99.15%
+  );
+  backdrop-filter: blur(15px);
+  transition: all 0.5s ease-in-out;
+}
+
+.button-linear:hover {
+  border: 2px solid rgba(168, 158, 130, 0.5);
+  background: transparent;
+  color: #ddd;
+}
