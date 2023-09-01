@@ -8,7 +8,7 @@ import {
   IconComputer,
   IconPause,
   IconPlay,
-} from '@/components/Icons';
+} from '@/components/common/Icons';
 
 const timers = {
   work: {

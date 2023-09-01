@@ -14,3 +14,32 @@ export const products = [
     price: 10,
   },
 ];
+
+export const PROJECT_LIST = [
+  {
+    id: 0,
+    link: '/pomodoro-timer',
+    label: 'Pomodoro Timer',
+  },
+
+  {
+    id: 1,
+    link: '/redux-shopping-cart',
+    label: 'Redux Shopping Cart',
+  },
+  {
+    id: 2,
+    link: '/carousel',
+    label: 'Carousel',
+  },
+  {
+    id: 3,
+    link: '/nike',
+    label: 'Nike landing page',
+  },
+  {
+    id: 4,
+    link: '/viet-travels',
+    label: 'Viet Travels',
+  },
+];

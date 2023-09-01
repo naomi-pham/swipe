@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { CartItem } from '@/lib/types';
 import { USDollar } from '@/lib/utils';
 
 import ProductDetailDrawer from '@/components/cart/ProductDetailDrawer';
-import { IconCart, IconInfo } from '@/components/Icons';
+import { IconCart, IconInfo } from '@/components/common/Icons';
 
 interface ProductCardProps {
   item: Omit<CartItem, 'quantity'>;

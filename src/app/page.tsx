@@ -1,7 +1,7 @@
-'use client';
-
 import Head from 'next/head';
 import Link from 'next/link';
+
+import { PROJECT_LIST } from '@/lib/constants';
 
 export default function HomePage() {
   return (
@@ -12,7 +12,7 @@ export default function HomePage() {
       <section className='mx-auto max-w-7xl bg-white'>
         <div className='layout relative flex min-h-screen flex-col py-12'>
           <ul className='space-y-2'>
-            {list.map((item) => (
+            {PROJECT_LIST.map((item) => (
               <li key={item.id}>
                 <Link href={item.link} className='text-blue-600 underline'>
                   {item.label}
@@ -25,32 +25,3 @@ export default function HomePage() {
     </main>
   );
 }
-
-export const list = [
-  {
-    id: 0,
-    link: '/pomodoro-timer',
-    label: 'Pomodoro Timer',
-  },
-
-  {
-    id: 1,
-    link: '/redux-shopping-cart',
-    label: 'Redux Shopping Cart',
-  },
-  {
-    id: 2,
-    link: '/carousel',
-    label: 'Carousel',
-  },
-  {
-    id: 3,
-    link: '/nike',
-    label: 'Nike landing page',
-  },
-  {
-    id: 4,
-    link: '/viet-travels',
-    label: 'Viet Travels',
-  },
-];

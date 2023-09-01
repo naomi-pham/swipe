@@ -5,7 +5,7 @@ import { CartItem } from '@/lib/types';
 
 import ProductCard from '@/components/cart/ProductCard';
 import { Product } from '@/components/cart/ProductPageUI';
-import { IconCart, IconHeart } from '@/components/Icons';
+import { IconCart, IconHeart } from '@/components/common/Icons';
 import { addItem } from '@/components/redux/features/cart/cartSlice';
 
 const ProductView = ({ products }: { products: Product[] }) => {

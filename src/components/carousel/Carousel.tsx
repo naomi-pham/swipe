@@ -6,7 +6,7 @@ import useWindowResize from '@/lib/hooks/useWindowResize';
 import { Post } from '@/lib/types';
 
 import CarouselCard from '@/components/carousel/CarouselCard';
-import { IconArrow } from '@/components/Icons';
+import { IconArrow } from '@/components/common/Icons';
 
 const Carousel = ({ posts }: { posts: Array<Post> }) => {
   const totalSlides = posts.length;
