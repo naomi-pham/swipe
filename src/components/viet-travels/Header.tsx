@@ -15,7 +15,7 @@ const Header = () => {
         <i>
           <IconVietTravelsLogo />
         </i>
-        <p className='text-xl font-bold italic'>
+        <p className='text-xl font-bold'>
           Viet
           <span className='text-viet-travels-primary-200'>Travels</span>
         </p>
