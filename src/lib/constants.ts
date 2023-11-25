@@ -47,4 +47,16 @@ export const PROJECT_LIST = [
     desc: 'landing page',
     label: 'Viet Travels',
   },
+  {
+    id: 4,
+    link: '/portfolio',
+    desc: 'landing page',
+    label: 'Portfolio',
+  },
+  {
+    id: 4,
+    link: '/tabs',
+    desc: 'component',
+    label: 'Tabs',
+  },
 ];
