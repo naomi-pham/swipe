@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import { PROJECT_LIST } from '@/lib/constants';
 
+import FramerCarousel from '@/components/framerCarousel/FramerCarousel';
+
 export default function HomePage() {
   return (
     <main>
@@ -27,6 +29,8 @@ export default function HomePage() {
           </ul>
         </div>
       </section>
+
+      <FramerCarousel />
     </main>
   );
 }
